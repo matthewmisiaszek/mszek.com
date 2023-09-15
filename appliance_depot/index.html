@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" style="scroll-snap-type: y proximity;">
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="resources/favicon.ico">
@@ -11,8 +11,8 @@
 	  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
   
-  <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <body style="scroll-snap-type: y proximity;">
+  	<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 	  <div class="container-fluid">
 		<a class="navbar-brand" href="#top"><img src="resources/drawing_small.png" alt="Appliance Depot" height=24 class="ms-2 me-2">Appliance Depot</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,74 +33,86 @@
 		</div>
 	  </div>
 	</nav>
-	<div id="top" style="width:1px; height:1px; position:relative; top:-70px;"></div>
-	<div class="container min-vh-100 d-flex align-items-center">
-		<div class="row align-items-center justify-content-center">
-			<div class="col-md-6">
-				<img src="resources/drawing_med.png" alt="Appliance Depot" class="img-fluid">
-			</div>
-			<div class="col-md-6 text-center">
-				<h1>Welcome to Big Joe's Appliance Depot!</h1>
-			</div>
-		</div>
-	</div>
-	<br>
-	<div id="services" style="width:1px; height:1px; position:relative; top:-70px;"></div>
-	<div class="container min-vh-100 d-flex align-items-center">
-		<div>
-			<div class="row">
-				<div class="col">
-					<div class="text-center border rounded p-3">
-						<h3>Appliances</h3><hr>
-						<img src="resources/drawing_small.png" alt="Appliance Depot" height=200>
-					</div>
+	<div class="bg-primary min-vh-100 d-flex flex-column">
+		<div id="top" style="width:1px; height:1px; position:relative; scroll-snap-align:start;"></div>
+		<div style="width: 100%; height:56px;"></div>
+		<div class="flex-fill container d-flex align-items-center">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-6">
+					<img src="resources/drawing_med.png" alt="Appliance Depot" class="img-fluid">
 				</div>
-				<div class="col">
-					<div class="text-center border rounded p-3">
-						<h3>Delivery</h3><hr>
-						<img src="resources/drawing_small.png" alt="Appliance Depot" height=200>
-					</div>
-				</div>
-				<div class="col">
-					<div class="text-center border rounded p-3">
-						<h3>Installation</h3><hr>
-						<img src="resources/drawing_small.png" alt="Appliance Depot" height=200>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row justify-content-center">
 				<div class="col-md-6 text-center">
-					<p class="fs-3">
-						We offer a wide variety of outlet-direct and scratch-and-dent appliances including
-						washers, dryers, refrigerators, and ranges.  Delivery and installation services are also available.
-					</p>
+					<h1>Welcome to Big Joe's Appliance Depot!</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="location" style="width:1px; height:1px; position:relative; top:-70px;"></div>
-	<div class="container min-vh-100 d-flex align-items-center justify-content-center">
-		<div class="text-center">
-		<h2>Come visit us!</h2>
-		<p>Open 9-5 M-F</p>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34536124.94625561!2d-91.4422204391717!3d58.107698898778885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ea20dbbe3c07715%3A0x34cf9d830114e218!2sGreenland!5e0!3m2!1sen!2sus!4v1694717950706!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<div class="bg-tertiary min-vh-100 d-flex flex-column">
+		<div id="services" style="width:1px; height:1px; position:relative; scroll-snap-align:start;"></div>
+		<div style="width: 100%; height:56px;"></div>
+		<div class="flex-fill container text-center d-flex align-items-center">
+			<div class="container">
+			<h2>Services</h2>
+				<div class="row justify-content-center">
+					<div class="col-sm-6 col-md-4">
+						<div class="text-center border rounded p-3">
+							<h3>Appliances</h3><hr>
+							<img src="resources/drawing_small.png" alt="Appliance Depot" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="text-center border rounded p-3">
+							<h3>Delivery</h3><hr>
+							<img src="resources/drawing_small.png" alt="Appliance Depot" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="text-center border rounded p-3">
+							<h3>Installation</h3><hr>
+							<img src="resources/drawing_small.png" alt="Appliance Depot" class="img-fluid">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-6 text-center">
+						<p class="fs-3">
+							We offer a wide variety of outlet-direct and scratch-and-dent appliances including
+							washers, dryers, refrigerators, and ranges.  Delivery and installation services are also available.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div id="contact" style="width:1px; height:1px; position:relative; top:-70px;"></div>
-	<div class="container min-vh-100 d-flex align-items-center">
-		<div class="row align-items-center justify-content-center">
-			<div class="col-md-6">
-				<img src="resources/drawing_med.png" alt="Appliance Depot" class="img-fluid">
+	<div class="bg-tertiary min-vh-100 d-flex flex-column">
+		<div id="location" style="width:1px; height:1px; position:relative; scroll-snap-align:start;"></div>
+		<div style="width: 100%; height:56px;"></div>
+		<div class="flex-fill container d-flex flex-column">
+			<div class="text-center">
+			<h2>Come visit us!</h2>
+			<p>Open 9-5 M-F</p>
 			</div>
-			<div class="col-md-6 text-center">
-				<h2>Contact</h2>
-				<p>Phone: 123-456-7890</p>
-				<p>Email: <a href="mailto:info@appliancedepot.store">info@appliancedepot.store</a></p>
+			<div class="container flex-fill" style="position:relative;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.8183203431317!2d-0.002574923966539818!3d0.0000053644249319850135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMDAnMDAuMCJOIDDCsDAwJzAwLjAiRQ!5e0!3m2!1sen!2sus!4v1694787731343!5m2!1sen!2sus" style="position: absolute; top:0; left:0; border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</div>
 	</div>
-
-	
+	<div class="bg-tertiary min-vh-100 d-flex flex-column">
+		<div id="contact" style="width:1px; height:1px; position:relative; scroll-snap-align:start;"></div>
+		<div style="width: 100%; height:56px;"></div>
+		<div class="flex-fill container d-flex align-items-center">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-md-6">
+					<img src="resources/drawing_med.png" alt="Appliance Depot" class="img-fluid">
+				</div>
+				<div class="col-md-6 text-center">
+					<h2>Contact</h2>
+					<p>Phone: 123-456-7890</p>
+					<p>Email: <a href="mailto:info@appliancedepot.store">info@appliancedepot.store</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
   </body>
 </html>
